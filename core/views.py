@@ -1,9 +1,12 @@
 # core/views.py
 
 from rest_framework import viewsets
-from .serializers import RecipeSerializer
-from .models import Recipe
+from .serializers import NotificationSerializer
+from .models import Notifications
 
-class RecipeViewSet(viewsets.ModelViewSet):
-    serializer_class = RecipeSerializer
+class NotificationsViews(viewsets.ModelViewSet):
+
+
+
+    serializer_class = Notifications
     queryset = Recipe.objects.all()

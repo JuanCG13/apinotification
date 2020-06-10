@@ -1,9 +1,9 @@
 # core/serializers.py
 
 from rest_framework import serializers
-from .models import Recipe 
-class RecipeSerializer(serializers.ModelSerializer):
+from .models import Notifications 
+class NotificationSerializer(serializers.ModelSerializer):
 
     class Meta:
-        model = Recipe
-        fields = ("id", "name", "ingredients", "picture", "difficulty", "prep_time", "prep_guide")
+        model = Notifications
+        fields = ("id", "name", "email", "phone_number")
