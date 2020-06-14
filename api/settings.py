@@ -55,11 +55,11 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
-CORS_ORIGIN_WHITELIST = [
-    'http://localhost:3000',
-    "http://127.0.0.1:5500/",
-    'https://linkstartfactory.netlify.app/',
-]
+# CORS_ORIGIN_WHITELIST = [
+#     'http://localhost:3000',
+#     "http://127.0.0.1:5500/",
+#     'https://linkstartfactory.netlify.app/',
+# ]
 
 
 ROOT_URLCONF = 'api.urls'
