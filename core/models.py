@@ -6,9 +6,9 @@ from django.db import models
 
 class Notifications(models.Model):
 
-    name = models.CharField(max_length=120)
+    name = models.CharField(max_length=254)
     email = models.EmailField(max_length=254)
-    phone_number = models.PositiveIntegerField()
+    phone_number = models.CharField(max_length=254)
     
     
     def __str__(self):
