@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'rest_framework', # add this
     'corsheaders', # add this
     'core', # add this
-    'whitenoise.runserver_nostatic', 
+    'whitenoise.runserver_nostatic',
+    'sendmail', 
 ]
 
 MIDDLEWARE = [
@@ -55,11 +56,11 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
-CORS_ORIGIN_WHITELIST = [
-    'http://localhost:3000',
-    "http://127.0.0.1:5500/",
-    'https://linkstartfactory.netlify.app/',
-]
+# CORS_ORIGIN_WHITELIST = [
+#     'http://localhost:3000',
+#     "http://127.0.0.1:5500/",
+#     'https://linkstartfactory.netlify.app/',
+# ]
 
 
 ROOT_URLCONF = 'api.urls'
@@ -67,7 +68,7 @@ ROOT_URLCONF = 'api.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
